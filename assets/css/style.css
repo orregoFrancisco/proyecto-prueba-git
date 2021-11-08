@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.contacto{
+    margin-bottom: 2%;
+}
+
+
+.card{
+    width: 18rem
+}
+
+
+#imagenViajes{
+    width: 4%;
+    margin-right: 1%;
+}
+
+#header_1{
+    background:  #000;
+}
+
+#header_2{
+    background:  #000;;
+}
+
+
+
+footer{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.row{
+    background-color: #000;
+}
+
+.my-nav{
+    z-index: 20;
+    width: 100%;
+    position: absolute;
+    }
+#navA{
+    color: #fff;
+}
+
+h6 .title{
+    background-color: aqua;
+}
+
+ .carousel-item{
+    height: 100vh;
+    background: no-repeat center center scroll;
+    
+    background-size: cover;
+ }
+
+ .d-block{
+     background-color: black;
+ }
+
+ .cointainer-fluid{
+     text-align: center;
+ }
+
+ #plane{
+     color: #fff;
+ }
+
+ .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+    padding-bottom: 3%;
+    }
+    
+    .div1 { 
+       
+        text-align: center;
+    }
+    .div2 { 
+        
+        text-align: center;
+    }
+    
+    
