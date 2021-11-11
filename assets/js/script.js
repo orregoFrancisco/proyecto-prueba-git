@@ -62,3 +62,4 @@ function alertPorClickcuatro(){
 // scrollReveal
 ScrollReveal().reveal('.headline',{ delay: 500});
 ScrollReveal().reveal('.headline1',{ delay: 400});
+ScrollReveal().reveal('.headlineCards',{ delay: 200});
