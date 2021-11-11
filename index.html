@@ -9,13 +9,15 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
      <!--Mi css-->
      <link rel="stylesheet" href="assets/css/style.css">
      <title>Prueba chile</title>
 </head>
 <body>
-
+<!-- section nav -->
+<header>
     <nav id="navNA" class="my-nav fixed-top navbar navbar-light navbar-expand-lg">
         <div class="container">
           <img id="imagenViajes" src="./assets/img/viajes.svg">
@@ -28,12 +30,14 @@
               <a id="navA" class="nav-link active " aria-current="page" href="#">Inicio</a>
               <a id="navA" class="nav-link" href="#header_1">¿Quíenes somos?</a>
               <a id="navA" class="nav-link" href="#header_2">Destacado</a>
-              <a id="navA" class="nav-link" href="#Contactarme">Contacto</a>
+              <a id="navA" class="nav-link" href="#contactoF">Contacto</a>
             </div>
           </div>
         </div>
       </nav>
-
+    </header>
+<!-- carousel section -->
+<section class="headline1">
     <div id="carouselExampleControls" class="carousel slide banner-image w-100 vh-100 d-flex justify-content-center align-items-center" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -55,9 +59,9 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-
-      <header id="header_1" class="hero text-light text-center pt-5 mt-5 d-none d-lg-block">
+  </section>
+  <!-- Parrafos  -->
+      <header id="header_1" class="headline hero text-light text-center pt-5 mt-5 d-none d-lg-block">
         <div class="container">
           <h1>¿Quíenes somos?</h1>
           <hr class="pt-1 text-info">
@@ -65,7 +69,7 @@
       </header>
 
 
-      <section class="container text-center my-5 d-none d-lg-block bg-black">
+      <section class="headline container text-center my-5 d-none d-lg-block bg-black">
         <div class="row">
           <div class="col-md-4">
             <h6 class="bg-info"><i class="fas fa-plane fa-3x" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i></h6>
@@ -85,77 +89,220 @@
 
       <header id="header_2" class="hero text-light text-center pt-5 mt-5">
         <div class="container">
-          <h1>Destacados</h1>
+          <p class="fs-1">Destacados</p>
           <hr class="pt-1 text-info">
         </div>
       </header>
-      </section>
 
-<!-- CARD SECTION -->
-<section class="mb-2">
-  <div class="container">
-    <div class="row p-4">
+      <!-- CARD SECTION -->
+      <section class=" headline mb-2">
+        <div class="container">
+          <div class="row p-4">
+         <!-- card1 -->
+            <div class="col-sm pt-4">
+              <div class="card">
+                <img src="./assets/img/card1.jpg" class="card-img-top" alt="card1">
+                 <div class="card-body bg-info">
+                    <h3>Parque nacional Torres del Paine</h3>
+                       <p id="PA" class="card-text pb-5">No te lo puedes perder: Full day Torres del Paine – Primera Clase.la mejor experiencia</p>
+                      <!-- Modal -->
+                         <!-- Button trigger modal -->
+                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <a>conoce mas</a>
+                               </button>
+                              <!-- fin de Button trigger modal -->
+                               <div class="modal fade text-info" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                 <div class="modal-dialog modal-dialog-scrollable">
+                                   <div class="modal-content">
+                                     <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">Parque nacional Torres del Paine</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                     </div>
+                                     <div class="modal-body">
+                                       <div class="container">
+                                         <div class="row">
+                                           <div class="col">
+                                             <img id="imagenModal1" src="./assets/img/card1.jpg" alt="card1">
+                                           </div>
+                                           <div class="col pt-2">
+                                             <p>Full Day Torres del Paine</p>
+                                              <a>CLP$ 45.000</a><p>USD$ 65</p>
+                                           </div>
+                                         </div>
+                                       </div>
+                                          <p><br>Reserva Las Torres tiene la mejor ubicación en el parque, ya que se encuentra en la puerta de entrada de los famosos circuitos de trekking, el W y el O. Desde aquí puedes disfrutar al máximo tu tiempo, sentirte inmerso en la pureza de la naturaleza y montañas de la Patagonia a través de experiencias de trekking, all-inclusive o tours por el día.</p>
+                                     </div>
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                       <button id="Input" type="button" class="btn btn-primary" data-bs-dismiss="modal" >Comprar</button>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                          <!-- fin de modal -->
+                              </div>
+                            </div>
+                          </div>
 
-      <div class="col-sm pt-4">
-        <div class="card">
-          <img src="./assets/img/card1.jpg" class="card-img-top" alt="carta1">
-          <div class="card-body bg-info">
-            <p id="titulos">PANQUEQUES CON MANJAR Y CREMA</p>
-            <p id="PA" class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
-          </div>
-        </div>
-      </div>
+          <!-- card2 -->
+            <div class="col-sm pt-4">
+              <div class="card">
+                <img src="./assets/img/card2.jpg" class="card-img-top" alt="card2">
+                <div class="card-body bg-info">
+                  <h3 id="titulos2">San pedro de Atacama</h3>
+                  <p id="PA2" class="card-text pb-5">Donde el desierto se funde con el cielo y las montañas dominan el horizonte. visita san pedro</p>
+                     <!-- Modal -->
+                      <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                          <a>conoce mas</a>
+                            </button>
+                              <!--fin de Button trigger modal -->
+                               <div class="modal fade text-info" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                 <div class="modal-dialog modal-dialog-scrollable">
+                                   <div class="modal-content">
+                                     <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">San pedro de Atacama</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                     </div>
+                                     <div class="modal-body">
+                                       <div class="container">
+                                         <div class="row">
+                                           <div class="col">
+                                             <img id="imagenModal2" src="./assets/img/card2.jpg" alt="card2">
+                                           </div>
+                                           <div class="col pt-2">
+                                             <p>San pedro de Atacama 7 dias 6 noches</p>
+                                              <a>CLP$ 570.000</a><p>USD$ 900</p>
+                                           </div>
+                                         </div>
+                                       </div>
+                                          <p><br>San Pedro de Atacama es el centro de la cultura atacameña y más tarde, un punto de avanzada para los incas. Todo esta cultura ancestral se encuentra en fortalezas y pucarás que datan del siglo XII.<br>Gracias a su peculiar geografía y beneficiado por las condiciones naturales del clima se han desarrollado actividades de astroturismo, como imperdibles tours para observar los astros y conocer más sobre el funcionamiento del universo.</p>
+                                     </div>
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                       <button id="Input2" type="button" class="btn btn-primary" data-bs-dismiss="modal">Comprar</button>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                          <!-- fin de modal -->
+                             </div>
+                           </div>
+                         </div>
 
-      <div class="col-sm pt-4">
-        <div class="card">
-          <img src="./assets/img/card2.jpg" class="card-img-top" alt="carta2">
-          <div class="card-body bg-info">
-            <p id="titulos2">TIRAMISÚ</p>
-            <p id="PA2" class="card-text "><br>quick example text to build on the card title and make up the bulk of the card's content.<br><br></p>
-          </div>
-        </div>
-      </div>
+               <!-- card3 -->
 
-      <div class="col-sm pt-4">
-        <div class="card">
-          <img src="./assets/img/card3.jpg" class="card-img-top" alt="carta3">
-          <div class="card-body bg-info">
-            <p id="titulos3">PLATEADA</p>
-            <p id="PA3" class="card-text"><br>quick example text to build on the card title and make up the bulk of the card's content.<br><br></p>
-          </div>
-        </div>
-      </div>
+               <div class="col-sm pt-4">
+                 <div class="card">
+                   <img src="./assets/img/card3.jpg" class="card-img-top" alt="card3">
+                   <div class="card-body bg-info">
+                     <h3 id="titulos2">Salar de atacama</h3>
+                     <p id="PA2" class="card-text pb-1"><br>El salar mas grande chile , una maravilla de la naturaleza que espera por ti<br><br><br></p>
+                        <!-- Modal -->
+                         <!-- Button trigger modal -->
+                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                             <a>conoce mas</a>
+                               </button>
+                                 <!--fin de Button trigger modal -->
+                                  <div class="modal fade text-info" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">San Pedro de Atacama-Salar</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="container">
+                                            <div class="row">
+                                              <div class="col">
+                                                <img id="imagenModal2" src="./assets/img/card3.jpg" alt="card3">
+                                              </div>
+                                              <div class="col pt-2">
+                                                <p>San Pedro de Atacama-Salar 7 dias 6 noches</p>
+                                                 <a>CLP$ 570.000</a><p>USD$ 900</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                             <p><br>Ubicado a más de 4.200 mnsm, el Salar de Atacama se caracteriza por sus aguas turquesas rodeadas de formaciones volcánicas de color rojo que contrastan con paisaje árido de la zona. Es posible avistar vicuñas, vizcachas y ñandúes, mejor conocidos en la zona como suris. Es un destino favorito para los fotógrafos y para los amantes de la naturaleza.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button id="Input3" type="button" class="btn btn-primary" data-bs-dismiss="modal">Comprar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                             <!-- fin de modal -->
+                                </div>
+                              </div>
+                            </div>
 
 
-      <div class="col-sm pt-4">
-        <div class="card">
-          <img src="./assets/img/card4.jpg" class="card-img-top" alt="carta3">
-          <div class="card-body bg-info">
-            <p id="titulos3">PLATEADA</p>
-            <p id="PA3" class="card-text"><br>quick example text to build on the card title and make up the bulk of the card's content.<br><br></p>
-          </div>
-        </div>
-      </div>
+                   <!-- card4 -->
+                   <div class="col-sm pt-4">
+                     <div class="card">
+                       <img src="./assets/img/card4.jpg" class="card-img-top" alt="card4">
+                       <div class="card-body bg-info">
+                         <h3 id="titulos2">Selva Valdiviana</h3>
+                         <p id="PA2" class="card-text pb-4"><br>sumergete en medio de bosques y paisajes pristinos,conoce el bosque valdiviano<br><br></p>
+                            <!-- Modal -->
+                             <!-- Button trigger modal -->
+                               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                                 <a>conoce mas</a>
+                                   </button>
+                                     <!--fin de Button trigger modal -->
+                                      <div class="modal fade text-info" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="staticBackdropLabel">Selva valdiviana</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col">
+                                                    <img id="imagenModal2" src="./assets/img/card4.jpg" alt="card4">
+                                                  </div>
+                                                  <div class="col pt-2">
+                                                    <p>Selva valdiviana / 5 dias , 2 noches</p>
+                                                     <a>CLP$ 570.000</a><p>USD$ 900</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                 <p><br>Te invitamos a conocer la Reserva Costera Valdiviana, un lugar especial ya que es una de las extensiones más grandes de bosque húmedo templado. Este lugar ha sobrevivido la última glaciación, por lo que encontraremos varias joyas escondidas de tiempos milenarios.Durante el tour exploraremos la reserva en un trekking a través de sus caminos interpretativos, apreciando los árboles de hasta 4.000 años de edad y conociendo animales únicos en el mundo.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button id="Input4" type="button" class="btn btn-primary" data-bs-dismiss="modal">Comprar</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                 <!-- fin de modal -->
+                                    </div>
+                                  </div>
+                                </div>
+                             </section>
+                           </div>
 
-    </div>
-  </div>
-</section>
-</div>
+      <!-- cONTACT SECTION -->
 <!-- cONTACT SECTION -->
-    <section class="cointainer-fluid hero text-light text-center pt-4 mt-5">
-      <h2 class="contacto">Contacto</h2>
+    <section class="headline cointainer-fluid hero text-light text-center pt-4 mt-5">
+      <h2 id="contactoF" class="contacto fs-1">Contacto</h2>
       <hr class="container pt-1 text-info">
     </section>
 
-    <!-- CONTACTO -->
-   <div data-tf-widget="HI6SevmU" style="width:100%;height:400px;"></div>
+    <!-- typeform -->
+   <!-- <div data-tf-widget="HI6SevmU" style="width:100%;height:400px;"></div> -->
       <!-- FIN DE CONTACTO -->
 
-
+  <!-- Footer section -->
+  <section class="headline">
     <footer class=" bg-info text-end ">
         <div class="parent p-3">
           <div class="div1">
-            <h5 class="display-5" href="#navNA">VIAJES CHILE</h5>
+            <h5 class="display-5" id="viajesChileFooter">VIAJES CHILE</h5>
           </div>
           <div class="div2">
             <i class="fab fa-twitter-square fa-3x mx-3"></i>
@@ -165,18 +312,21 @@
           </div>
           </div>
   </footer>
+</section>
 
 
 
-<script src="//embed.typeform.com/next/embed.js"></script>
-
-
+<!-- scrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+ <!-- typeform Js -->
+  <!-- <script src="//embed.typeform.com/next/embed.js"></script> -->
+<!-- jquery 3.5.1 -->
   <script
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- MI SCRIPT -->
+<!-- js Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- MI SCRIPT -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
